@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Form</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="intern-header">
+            <h1>Intern - Software Testing</h1>
+            <!-- /templates/register.html -->
+            <a href="/">Go to home</a>
+        </div>
+        <p class="remote-fulltime">Remote | Full Time</p>
+    </header>
+    <form class="signup-form" method="POST">
+        <h2 class="form-header">Submit Your Application</h2>
+        <!-- First Name  -->
+        <div class="two-items">
+            <div>
+                <label for="fistname">First Name:</label>
+                <input type="text" name="firstname" placeholder="Enter your first name" required>
+            </div>
+            <!-- Last Nanme -->
+            <div>
+                <label for="lasttname">Last Name:</label>
+                <input type="text" name="lastname" placeholder="Enter your last name">
+            </div>
+        </div>
+        <!-- email -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" name="email" placeholder="abcd@gmail.com" required>
+        </div>
+        <!-- Mobile Number -->
+        <div>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" name="phone" placeholder="0123456789" required>
+        </div>
+        <!-- Gender -->
+        <div class="gender">
+            <div>
+                <label>Gender: </label>
+            </div>
+            <input type="radio" name="gender" value="Male" required>
+            <label for="gender">Male</label>
+            <input type="radio" name="gender" value="Female" required>
+            <label for="gender">Female</label>
+        </div>
+        <!-- Select Skills -->
+        <div class="skills">
+            <div>
+                <label>Skills: </label>
+            </div class="skills">
+            <!-- <label for="skills">Skills:</label> -->
+            <input type="checkbox" name="skill" value="C">
+            <label for="skill"> C programming</label><br>
+            <input type="checkbox" name="skill" value="Java">
+            <label for="skill"> Java </label><br>
+            <input type="checkbox" name="skill" value="Python">
+            <label for="skill"> Python </label><br>
+            <input type="checkbox" name="skill" value="HTML">
+            <label for="skill"> HTML </label><br>
+            <input type="checkbox" name="skill" value="CSS">
+            <label for="skill"> CSS </label><br>
+        </div>
+        <div class="two-items">
+            <!-- Total Experience -->
+            <div>
+                <label for="total experience">Total Experience:</label>
+                <input type="text" name="experience" placeholder="Enter total experience">
+            </div>
+            <!-- Notice Period -->
+            <div>
+                <label for="notice period">Notice period:</label>
+                <input type="text" name="noticeperiod" placeholder="Enter in days">
+            </div>
+        </div>
+        <!-- Cuttent CTC -->
+        <div class="two-items">
+            <div>
+                <label for="current ctc">Current CTC:</label>
+                <input type="text" name="currentctc" placeholder="Per anum">
+            </div>
+            <!-- Expected CTC -->
+            <div>
+                <label for="expected ctc">Expected CTC:</label>
+                <input type="text" name="expectedctc" placeholder="Per anum">
+            </div>
+        </div>
+        <!-- Submit -->
+        <div class="button">
+            <button type="submit" value="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

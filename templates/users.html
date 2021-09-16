@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register Applicants</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="intern-header">
+            <h1>Intern - Software Testing</h1>
+            <!-- /templates/register.html -->
+            <a href="/">Go to home</a>
+        </div>
+        <p class="remote-fulltime">Remote | Full Time</p>
+    </header>
+    <main class="main-content usergrid">
+        {% for user in userDetails %}
+        <section class="user-details">
+            <h2>Details of  {{user[1]}} {{user[2]}}</h2>
+            <p>Email: {{user[3]}}</p>
+            <p>Phone: {{user[4]}}</p>
+            <p>Gender: {{user[5]}}</p>
+            <p>Skills: {{user[6]}}</p>
+            <p>Total Experience: {{user[7]}} years</p>
+            <p>Notice Period: {{user[8]}} </p>
+            <p>Current CTC: {{user[9]}}</p>
+            <p>Expected CTC: {{user[10]}}</p>
+        </section>
+        {% endfor %}
+    </main>
+</body>
+</html>
